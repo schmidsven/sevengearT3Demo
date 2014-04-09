@@ -34,6 +34,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvorbis", "projects\libvo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtheora", "projects\libtheora.vcxproj", "{B0B6B74B-2045-43B0-85BF-A24BF2D25155}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vrpn", "..\..\..\..\vrpn\vrpn.vcxproj", "{7EE1DB03-16A5-4465-9164-061BE0C88B8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -137,6 +139,12 @@ Global
 		{B0B6B74B-2045-43B0-85BF-A24BF2D25155}.Optimized Debug|Win32.Build.0 = Optimized Debug|Win32
 		{B0B6B74B-2045-43B0-85BF-A24BF2D25155}.Release|Win32.ActiveCfg = Release|Win32
 		{B0B6B74B-2045-43B0-85BF-A24BF2D25155}.Release|Win32.Build.0 = Release|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Debug|Win32.Build.0 = Debug|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Optimized Debug|Win32.ActiveCfg = Debug|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Optimized Debug|Win32.Build.0 = Debug|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Release|Win32.ActiveCfg = Release|Win32
+		{7EE1DB03-16A5-4465-9164-061BE0C88B8C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

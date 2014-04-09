@@ -73,7 +73,7 @@
       <AdditionalOptions>/MP4 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DevelopPath)\vrpn;../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/vrpn;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_SHADERGEN;TORQUE_UNICODE;TORQUE_SHARED;BAN_OPCODE_AUTOLINK;ICE_NO_DLL;TORQUE_OPCODE;LTC_NO_PROTOTYPES;TORQUE_EXTENDED_MOVE;TORQUE_ADVANCED_LIGHTING;TORQUE_BASIC_LIGHTING;TORQUE_COLLADA;DOM_INCLUDE_TINYXML;PCRE_STATIC;TORQUE_OGGVORBIS;TORQUE_OGGTHEORA;TORQUE_OGGVORIBS;UNICODE;INITGUID;_CRT_SECURE_NO_DEPRECATE;TORQUE_DEBUG;TORQUE_DEBUG_GUARD;D3D_DEBUG_INFO;TORQUE_NET_STATS;UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -98,10 +98,10 @@
       <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovrd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>vrpn.lib;x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovrd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)sevengear_DEBUG.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(DevelopPath)\vrpn;$(DevelopPath)\vrpn\pc_win32\Debug;$(DevelopPath)/Torque3D/Engine/lib/compiled/Debug.Win32/;$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>$(DevelopPath)/Torque3D/Engine/lib/Torque3D/msvc/torque3d.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -125,7 +125,7 @@
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DevelopPath)\vrpn;../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_SHADERGEN;TORQUE_UNICODE;TORQUE_SHARED;BAN_OPCODE_AUTOLINK;ICE_NO_DLL;TORQUE_OPCODE;LTC_NO_PROTOTYPES;TORQUE_EXTENDED_MOVE;TORQUE_ADVANCED_LIGHTING;TORQUE_BASIC_LIGHTING;TORQUE_COLLADA;DOM_INCLUDE_TINYXML;PCRE_STATIC;TORQUE_OGGVORBIS;TORQUE_OGGTHEORA;TORQUE_OGGVORIBS;UNICODE;INITGUID;_CRT_SECURE_NO_DEPRECATE;TORQUE_DEBUG;TORQUE_DEBUG_GUARD;D3D_DEBUG_INFO;TORQUE_NET_STATS;UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -150,12 +150,12 @@
       <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovrd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>vrpn.lib;x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovrd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)sevengear_OPTIMIZEDDEBUG.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(DevelopPath)\vrpn\pc_win32\Debug;$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>../../../../../Engine/lib/Torque3D/msvc/torque3d.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DevelopPath)/Torque3D/Engine/lib/Torque3D/msvc/torque3d.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -176,7 +176,7 @@
       <AdditionalOptions>/MP4 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DevelopPath)\vrpn;../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_SHADERGEN;TORQUE_UNICODE;TORQUE_SHARED;BAN_OPCODE_AUTOLINK;ICE_NO_DLL;TORQUE_OPCODE;LTC_NO_PROTOTYPES;TORQUE_EXTENDED_MOVE;TORQUE_ADVANCED_LIGHTING;TORQUE_BASIC_LIGHTING;TORQUE_COLLADA;DOM_INCLUDE_TINYXML;PCRE_STATIC;TORQUE_OGGVORBIS;TORQUE_OGGTHEORA;TORQUE_OGGVORIBS;UNICODE;INITGUID;_CRT_SECURE_NO_DEPRECATE;UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -202,12 +202,12 @@
       <AdditionalIncludeDirectories>../../../game/shaders;$(DevelopPath)/Torque3D/Engine/lib/lmng;$(DevelopPath)/Torque3D/Engine/lib/lpng;$(DevelopPath)/Torque3D/Engine/lib/ljpeg;$(DevelopPath)/Torque3D/Engine/lib/lungif;$(DevelopPath)/Torque3D/Engine/lib/zlib;$(DevelopPath)/Torque3D/Engine/lib/tinyxml;$(DevelopPath)/Torque3D/Engine/lib/opcode;$(DevelopPath)/Torque3D/Engine/lib/squish;$(DevelopPath)/Torque3D/Engine/lib/convexDecomp;$(DevelopPath)/Torque3D/Engine/lib/libvorbis/include;$(DevelopPath)/Torque3D/Engine/lib/libogg/include;$(DevelopPath)/Torque3D/Engine/lib/libtheora/include;../../../source;$(DevelopPath)/Torque3D/Engine/source/;$(DevelopPath)/Torque3D/Engine/lib/;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)/Torque3D/Engine/lib/collada/include;$(DevelopPath)/Torque3D/Engine/lib/collada/include/1.4;$(DevelopPath)/Torque3D/Engine/lib/openal/win32;$(DevelopPath)\OculusSDK/LibOVR/Include;$(DevelopPath)\OculusSDK/LibOVR/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>vrpn.lib;x3daudio.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;d3d9.lib;d3dx9.lib;DxErr.lib;ole32.lib;shell32.lib;oleaut32.lib;version.lib;libovr.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)sevengear.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(DevelopPath)\vrpn\pc_win32\Debug;$(DevelopPath)/Torque3D/Engine/lib/SDL/win32;$(DevelopPath)/Torque3D/Engine/lib/unicode;$(DevelopPath)/Torque3D/Engine/lib/directx8;$(DevelopPath)\OculusSDK/LibOVR/Lib/Win32;../../Link/VC2010.$(Configuration).$(PlatformName);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>../../../../../Engine/lib/Torque3D/msvc/torque3d.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DevelopPath)/Torque3D/Engine/lib/Torque3D/msvc/torque3d.def</ModuleDefinitionFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -223,6 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(DevelopPath)\Torque3D\Engine\source\T3D\aiClient.cpp" />
+    <ClCompile Include="sevengearDevice.cpp" />
     <ClInclude Include="$(DevelopPath)\Torque3D\Engine\source\T3D\aiClient.h" />
     <ClCompile Include="$(DevelopPath)\Torque3D\Engine\source\T3D\aiConnection.cpp" />
     <ClInclude Include="$(DevelopPath)\Torque3D\Engine\source\T3D\aiConnection.h" />
@@ -1298,6 +1299,7 @@
     <ClInclude Include="$(DevelopPath)\Torque3D\Engine\source\math\mMath.h" />
     <ClCompile Include="$(DevelopPath)\Torque3D\Engine\source\math\mMathAltivec.cpp" />
     <ClCompile Include="$(DevelopPath)\Torque3D\Engine\source\math\mMathAMD.cpp" />
+    <ClInclude Include="sevengearDevice.h" />
     <CustomBuild Include="$(DevelopPath)\Torque3D\Engine\source\math\mMathAMD_ASM.asm">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(DevelopPath)\Torque3D\Engine\bin\nasm\nasm.exe" -f win32 "%(FullPath)" -o "$(IntDir)%(Filename).obj"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
@@ -1915,6 +1917,14 @@
     <ClInclude Include="..\..\..\source\torqueConfig.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\vrpn\vrpn.vcxproj">
+      <Project>{7ee1db03-16a5-4465-9164-061be0c88b8c}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
     <ProjectReference Include="lmng.vcxproj">
       <Project>{73D9048F-55AA-4EF6-BF33-3A811DC47FCE}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
